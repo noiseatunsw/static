@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<title>Noise@UNSW</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="style" href="/assets/built/screen.css?v=54dceba610">
+<link rel="preload" as="script" href="/assets/built/source.js?v=54dceba610">
+<link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=54dceba610">
+<style>
+        :root {
+            --background-color: #e9ceff
+        }
+    </style>
+<script type="72c9b7fb3ea765e4a5ed56e4-text/javascript">
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+<meta name="description" content="UNSW&#x27;s independent student publication.">
+<link rel="icon" href="https://www.noiseatunsw.com/content/images/size/w256h256/2024/03/Untitled-design-1-.png" type="image/png">
+<link rel="canonical" href="https://www.noiseatunsw.com/">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="next" href="https://www.noiseatunsw.com/page/2/">
+<meta property="og:site_name" content="Noise@UNSW">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Noise@UNSW">
+<meta property="og:description" content="UNSW&#x27;s independent student publication.">
+<meta property="og:url" content="https://www.noiseatunsw.com/">
+<meta property="og:image" content="https://www.noiseatunsw.com/content/images/2024/05/Untitled_design_1.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Noise@UNSW">
+<meta name="twitter:description" content="UNSW&#x27;s independent student publication.">
+<meta name="twitter:url" content="https://www.noiseatunsw.com/">
+<meta name="twitter:image" content="https://www.noiseatunsw.com/content/images/2024/05/Untitled_design_1.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Noise@UNSW",
+        "url": "https://www.noiseatunsw.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.noiseatunsw.com/content/images/2024/05/Layer-2.webp"
+        }
+    },
+    "url": "https://www.noiseatunsw.com/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.noiseatunsw.com/content/images/2024/05/Untitled_design_1.webp",
+        "width": 1200,
+        "height": 675
+    },
+    "mainEntityOfPage": "https://www.noiseatunsw.com/",
+    "description": "UNSW&#x27;s independent student publication."
+}
+    </script>
+<meta name="generator" content="Ghost 5.88">
+<link rel="alternate" type="application/rss+xml" title="Noise@UNSW" href="https://www.noiseatunsw.com/rss/">
+<script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.37/umd/portal.min.js" data-i18n="false" data-ghost="https://www.noiseatunsw.com/" data-key="8f9af6b44e3e053842c186bf68" data-api="https://www.noiseatunsw.com/ghost/api/content/" crossorigin="anonymous" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+<script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="8f9af6b44e3e053842c186bf68" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://www.noiseatunsw.com/" crossorigin="anonymous" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+<link href="https://www.noiseatunsw.com/webmentions/receive/" rel="webmention">
+<script defer src="/public/cards.min.js?v=54dceba610" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=54dceba610">
+<script defer src="/public/comment-counts.min.js?v=54dceba610" data-ghost-comments-counts-api="https://www.noiseatunsw.com/members/api/comments/counts/" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+<script defer src="/public/member-attribution.min.js?v=54dceba610" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script><style>:root {--ghost-accent-color: #3a1355;}</style>
+<style>
+  .gh-header-title {
+    background-color: #280D3B;
+  }
+.gh-footer-copyright {
+    visibility: hidden;
+    }
+.gh-footer-copyright:after {
+    visibility: visible;
+    content: 'Noise stands for independent student journalism.';
+    }
+.gh-article-tag {
+  font-size: 2.5rem;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+<script type="72c9b7fb3ea765e4a5ed56e4-text/javascript">
+    function getAway() {
+      // Get away right now
+      window.open("https://google.com", "_newtab");
+      // Replace current site with another benign site
+      window.location.replace('https://moodle.telt.unsw.edu.au');
+    };
+    
+    $(function() {
+
+      $("#get-away").on("click", function(e) {
+        getAway();
+      });
+
+      $("#get-away a").on("click", function(e) {
+        // allow the link to work
+        e.stopPropagation();
+      });
+
+      $(document).keyup(function(e) {
+        if (e.keyCode == 27) { // Escape key
+          getAway();
+        }
+      });
+
+    });
+</script>
+<script type="72c9b7fb3ea765e4a5ed56e4-text/javascript">
+    function supportPage() {
+      // Replace current site with the support page
+      window.location.replace('https://noiseatunsw.com/support');
+    };
+    
+    $(function() {
+
+      $("#support").on("click", function(e) {
+        supportPage();
+      });
+
+      $("#support a").on("click", function(e) {
+        // allow the link to work
+        e.stopPropagation();
+      });
+
+      $(document).keyup(function(e) {
+        if (e.keyCode == 192) { // Grave (`) key
+          supportPage();
+        }
+      });
+
+    });
+</script>
+<script defer src="https://radar.inyourair.space/c5e654ad0ec4b23c9438b766" data-website-id="4880ef9c-ca3e-43fb-993d-bcfd1279c841" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+</head>
+<body class="home-template has-sans-title has-sans-body">
+<div class="gh-viewport">
+<header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+<div class="gh-navigation-inner gh-inner">
+<div class="gh-navigation-brand">
+<a class="gh-navigation-logo is-title" href="https://www.noiseatunsw.com">
+<img src="https://www.noiseatunsw.com/content/images/2024/05/Layer-2.webp" alt="Noise@UNSW">
+</a>
+<button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button> <button class="gh-burger gh-icon-button" aria-label="Menu">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg> </button>
+</div>
+<nav class="gh-navigation-menu">
+<ul class="nav">
+<li class="nav-home nav-current"><a href="https://www.noiseatunsw.com/">Home</a></li>
+<li class="nav-about"><a href="https://www.noiseatunsw.com/about/">About</a></li>
+<li class="nav-support-services"><a href="https://www.noiseatunsw.com/support/">Support Services</a></li>
+<li class="nav-tipline"><a href="https://www.noiseatunsw.com/tipline/">Tipline</a></li>
+<li class="nav-donate"><a href="https://opencollective.com/noiseatunsw">Donate</a></li>
+</ul>
+</nav>
+<div class="gh-navigation-actions">
+<button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button> <div class="gh-navigation-members">
+<a href="#/portal/signin" data-portal="signin">Sign in</a>
+<a class="gh-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+</div>
+</div>
+</div>
+</header>
+<section class="gh-header is-classic has-image gh-outer">
+<img class="gh-header-image" src="https://www.noiseatunsw.com/content/images/2024/05/Untitled_design_1.webp" alt="Noise@UNSW">
+<div class="gh-header-inner gh-inner">
+<h1 class="gh-header-title is-title">UNSW&#x27;s independent student publication.</h1>
+<form class="gh-form" data-members-form>
+<input class="gh-form-input" id="header-email" type="email" placeholder="jamie@example.com" required data-members-email>
+<button class="gh-button" type="submit" aria-label="Subscribe">
+<span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+<g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+<g class="nc-loop-dots-4-24-icon-o">
+<circle cx="4" cy="12" r="3"></circle>
+<circle cx="12" cy="12" r="3"></circle>
+<circle cx="20" cy="12" r="3"></circle>
+</g>
+<style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+</g>
+</svg> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+<style>
+        .checkmark {
+            width: 40px;
+            height: 40px;
+            display: block;
+            stroke-width: 2.5;
+            stroke: currentColor;
+            stroke-miterlimit: 10;
+        }
+
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+        }
+
+        @keyframes stroke {
+            100% { stroke-dashoffset: 0; }
+        }
+    </style>
+</svg> </button>
+<p data-members-error></p>
+</form>
+</div>
+</section>
+<section class="gh-container is-list gh-outer">
+<div class="gh-container-inner gh-inner">
+<h2 class="gh-container-title">
+Latest
+</h2>
+<main class="gh-main">
+<div class="gh-feed">
+<article class="gh-card post">
+<a class="gh-card-link" href="/unsw-campus-policy-activism/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 160w,
+                            /content/images/size/w320/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 320w,
+                            /content/images/size/w600/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 600w,
+                            /content/images/size/w960/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 960w,
+                            /content/images/size/w1200/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 1200w,
+                            /content/images/size/w2000/format/webp/2024/08/Copy-of-Cover-Images-for-Web.jpg 2000w" sizes="320px" src="/content/images/size/w600/2024/08/Copy-of-Cover-Images-for-Web.jpg" alt="How UNSW&#x27;s new campus policy fucks over activists" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">How UNSW&#x27;s new campus policy fucks over activists</h3>
+<p class="gh-card-excerpt is-body">Conroy discusses the impact of UNSW’s new “campus policy” on student activism and free speech.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By [GUEST] Conroy Blood</span>
+<time class="gh-card-date" datetime="2024-08-02">2 Aug 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured">
+<a class="gh-card-link" href="/honi-soit-pda-dear-honi/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-Cover-Images-for-Web-7-.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-Cover-Images-for-Web-7-.png" alt="Hacker takes over Honi Soit Website" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Hacker takes over Honi Soit Website</h3>
+<p class="gh-card-excerpt is-body">The editors of Honi Soit have been locked out of the website by an anonymous USYD student.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Pepsi, Alyss Cachia</span>
+<time class="gh-card-date" datetime="2024-07-31">31 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured">
+<a class="gh-card-link" href="/arc-clubs-changes-2024/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-What-happened-to-tharunka-1.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-What-happened-to-tharunka-1.png" alt="Why every Arc Club needs to change their constitution" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Why every Arc Club needs to change their constitution</h3>
+<p class="gh-card-excerpt is-body">All clubs will have to make constitutional changes to meet new Arc clubs policy.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Ren, Luke Levett</span>
+<time class="gh-card-date" datetime="2024-07-29">29 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post">
+<a class="gh-card-link" href="/usyd-policy-threatens-protests/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/USyd-Policy-threatens-Protests---Cover-1.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/USyd-Policy-threatens-Protests---Cover-1.png" alt="USYD Protest Policy Threatens Student Voices" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">USYD Protest Policy Threatens Student Voices</h3>
+<p class="gh-card-excerpt is-body">Policies barring events with stalls, speakers, megaphones, posters, cooking equipment without university approval have been condemned by students and human rights groups alike.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alyss Cachia</span>
+<time class="gh-card-date" datetime="2024-07-25">25 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured no-image">
+<a class="gh-card-link" href="/podcast/s01-e06/">
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Make Some Noise Episode 6 - The Welfare Special</h3>
+<p class="gh-card-excerpt is-body">The Noise team is joined by SRC Welfare Officer Annikka Burge, who&#x27;s brought in a slew of initiatives around improving the student experience both on and off campus. We&#x27;ve also got a discussion about the new changes being brought in by Arc Clubs, essential for this year&#x27;s AGM season.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Noise Editors</span>
+<time class="gh-card-date" datetime="2024-07-24">24 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post">
+<a class="gh-card-link" href="/the-equality-bill-debate-2024/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-Cover-Images-for-Web--1--1.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-Cover-Images-for-Web--1--1.png" alt="Here We Are Again: The Equality Bill Debate" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Here We Are Again: The Equality Bill Debate</h3>
+<p class="gh-card-excerpt is-body">The Equality Bill is once again up for debate in the NSW parliament on August 16, communities call for people to support its passing</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alyss Cachia</span>
+<time class="gh-card-date" datetime="2024-07-22">22 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured">
+<a class="gh-card-link" href="/light-rail-strikes-july-24/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-Cover-Images-for-Web-6-.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-Cover-Images-for-Web-6-.png" alt="How to get to uni during this week&#x27;s industrial action" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">How to get to uni during this week&#x27;s industrial action</h3>
+<p class="gh-card-excerpt is-body">Another round of light rail strikes wraps up term 2 for UNSW.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Pepsi, Alyss Cachia, Luke Levett</span>
+<time class="gh-card-date" datetime="2024-07-22">22 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured no-image">
+<a class="gh-card-link" href="/podcast/make-some-noise-episode-5-the-loud-noises-special/">
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Make Some Noise Episode 5 - The Loud Noises Special</h3>
+<p class="gh-card-excerpt is-body">The Noise team returns with an SRC &quot;WatchMojo Top 5 Quotes&quot; breakdown, as well as the return of Silly Hour, and a breakdown of the new protest rules at the University of Sydney.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Noise Editors</span>
+<time class="gh-card-date" datetime="2024-07-17">17 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured">
+<a class="gh-card-link" href="/july-24-src-wrapup/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-Cover-Images-for-Web-1.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-Cover-Images-for-Web-1.png" alt="July 2024 SRC Wrapup" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">July 2024 SRC Wrapup</h3>
+<p class="gh-card-excerpt is-body">Alice wraps up the July 2024 SRC meeting.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alice Thompson</span>
+<time class="gh-card-date" datetime="2024-07-12">12 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post featured">
+<a class="gh-card-link" href="/src-beginners-guide/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-Cover-Images-for-Web-4-.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-Cover-Images-for-Web-4-.png" alt="A Beginner&#x27;s Guide to the UNSW SRC" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">A Beginner&#x27;s Guide to the UNSW SRC</h3>
+<p class="gh-card-excerpt is-body">Alice explores the key aspects of UNSW&#x27;s Student Representative Council.</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alice Thompson</span>
+<time class="gh-card-date" datetime="2024-07-11">11 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post">
+<a class="gh-card-link" href="/hung-vote-controversial-election-motion-rejected-after-surprise-appearance-from-harrison-brennan/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/What-happened-to-tharunka--1--1.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/What-happened-to-tharunka--1--1.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/What-happened-to-tharunka--1--1.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/What-happened-to-tharunka--1--1.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/What-happened-to-tharunka--1--1.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/What-happened-to-tharunka--1--1.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/What-happened-to-tharunka--1--1.png" alt="Hung Vote: Controversial Election Motion Rejected after surprise appearance from USyd SRC President" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Hung Vote: Controversial Election Motion Rejected after surprise appearance from USyd SRC President</h3>
+<p class="gh-card-excerpt is-body">The divisive proposal to move UNSW’s SRC elections to Flexi-Week has been rejected by the closest possible margin, with 12 members of the SRC voting against it, 12 voting in favour of it, and one abstention.
+Submitted to the SRC last week, it recorded the highest turnout of votes</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alex Neale</span>
+<time class="gh-card-date" datetime="2024-07-10">10 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article> <article class="gh-card post">
+<a class="gh-card-link" href="/flex-week-election-proposal-to-see-labor-aligned-student-reps-cross-the-floor/">
+<figure class="gh-card-image">
+<img srcset="/content/images/size/w160/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 160w,
+                            /content/images/size/w320/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 320w,
+                            /content/images/size/w600/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 600w,
+                            /content/images/size/w960/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 960w,
+                            /content/images/size/w1200/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/07/Copy-of-What-happened-to-tharunka.png 2000w" sizes="320px" src="/content/images/size/w600/2024/07/Copy-of-What-happened-to-tharunka.png" alt="Flex-Week Election Proposal to see Labor-Aligned student reps cross the floor" loading="lazy">
+</figure>
+<div class="gh-card-wrapper">
+<h3 class="gh-card-title is-title">Flex-Week Election Proposal to see Labor-Aligned student reps cross the floor</h3>
+<p class="gh-card-excerpt is-body">A proposal by the SRC’s Labor-affiliated faction, ‘Revive’, to move UNSW’s SRC Elections to Flex-Week (Week 6) has been met with backlash on many sides, including Revive’s own.
+Motioned in the days after Oscar Iredale, who is also a member of the Labor party, was elected Chair</p>
+<footer class="gh-card-meta">
+
+<span class="gh-card-author">By Alex Neale</span>
+<time class="gh-card-date" datetime="2024-07-06">6 Jul 2024</time>
+</footer>
+</div>
+</a>
+</article>
+</div>
+</main>
+<div class="gh-more is-title">
+<a href="https://www.noiseatunsw.com/page/2">See all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></a>
+</div>
+</div>
+</section>
+<footer class="gh-footer gh-outer">
+<div class="gh-footer-inner gh-inner">
+<div class="gh-footer-bar">
+<span class="gh-footer-logo is-title">
+<img src="https://www.noiseatunsw.com/content/images/2024/05/Layer-2.webp" alt="Noise@UNSW">
+</span>
+<nav class="gh-footer-menu">
+<ul class="nav">
+<li class="nav-sign-up nav-current"><a href="#/portal/">Sign up</a></li>
+<li class="nav-contact-us"><a href="https://www.noiseatunsw.com/contact/">Contact Us</a></li>
+<li class="nav-join-the-team"><a href="https://www.noiseatunsw.com/editor-signup/">Join The Team</a></li>
+</ul>
+</nav>
+<div class="gh-footer-copyright">
+Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+</div>
+</div>
+<section class="gh-footer-signup">
+<h2 class="gh-footer-signup-header is-title">
+Noise@UNSW
+</h2>
+<p class="gh-footer-signup-subhead is-body">
+UNSW&#x27;s independent student publication.
+</p>
+<form class="gh-form" data-members-form>
+<input class="gh-form-input" id="footer-email" type="email" placeholder="jamie@example.com" required data-members-email>
+<button class="gh-button" type="submit" aria-label="Subscribe">
+<span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+<g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+<g class="nc-loop-dots-4-24-icon-o">
+<circle cx="4" cy="12" r="3"></circle>
+<circle cx="12" cy="12" r="3"></circle>
+<circle cx="20" cy="12" r="3"></circle>
+</g>
+<style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+</g>
+</svg> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+<style>
+        .checkmark {
+            width: 40px;
+            height: 40px;
+            display: block;
+            stroke-width: 2.5;
+            stroke: currentColor;
+            stroke-miterlimit: 10;
+        }
+
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+        }
+
+        @keyframes stroke {
+            100% { stroke-dashoffset: 0; }
+        }
+    </style>
+</svg> </button>
+<p data-members-error></p>
+</form> </section>
+</div>
+</footer>
+</div>
+<script src="/assets/built/source.js?v=54dceba610" type="72c9b7fb3ea765e4a5ed56e4-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="72c9b7fb3ea765e4a5ed56e4-|49" defer></script></body>
+</html>
